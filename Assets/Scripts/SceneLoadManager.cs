@@ -14,6 +14,10 @@ public class SceneLoadManager : MonoBehaviour {
         SceneManager.LoadScene(0);
     }
 
+    public void MoveGameOverScene() {
+        SceneManager.LoadScene("Game Over");
+    }
+
     public void QuitGame() {
         Application.Quit();
     }

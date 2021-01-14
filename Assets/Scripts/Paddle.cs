@@ -8,9 +8,11 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float minX = 1f;
     [SerializeField] float maxX = 15f;
 
+    private Ball ball;
+
     // Start is called before the first frame update
     void Start() {
-        
+        ball = FindObjectOfType<Ball>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,10 @@ public class Paddle : MonoBehaviour {
     }
 
     private float GetXPosition() {
-        return Mathf.Clamp(Input.mousePosition.x / Screen.width * screenWidthInUnit, minX, maxX);
+
+        //float xPos = Input.mousePosition.x / Screen.width * screenWidthInUnit;
+        float xPos = ball.transform.position.x;
+
+        return Mathf.Clamp(xPos, minX, maxX);
     }
 }

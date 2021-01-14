@@ -10,6 +10,7 @@ public class Ball : MonoBehaviour {
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 15f;
     private bool hasStarted = false;
+    private AudioSource myAudioSource;
 
     // state
     Vector2 paddleToBallVector;
@@ -18,6 +19,7 @@ public class Ball : MonoBehaviour {
     void Start() {
         // distance.
         paddleToBallVector = transform.position - paddle1.transform.position;
+        myAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -39,5 +41,11 @@ public class Ball : MonoBehaviour {
     private void LockBallToPaddle() {
         Vector2 paddlePosition = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePosition + paddleToBallVector;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (hasStarted) {
+            myAudioSource.Play();
+        }
     }
 }

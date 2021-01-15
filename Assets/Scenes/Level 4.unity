@@ -17100,6 +17100,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1016041358}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1025395535 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 860130160991128713, guid: d1685e7bed1064dfcbb5b31ec3311db5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1144246953360680578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1037180558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18967,6 +18979,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4825281901673806031, guid: 09f957d0675884cceb5ed2241600e361,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1025395535}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f957d0675884cceb5ed2241600e361, type: 3}
 --- !u!1001 &1157987241
@@ -34763,12 +34780,7 @@ PrefabInstance:
     - target: {fileID: 1144246952738394284, guid: d1685e7bed1064dfcbb5b31ec3311db5,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1144246952738394284, guid: d1685e7bed1064dfcbb5b31ec3311db5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: Game Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 1144246952738394288, guid: d1685e7bed1064dfcbb5b31ec3311db5,
         type: 3}

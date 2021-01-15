@@ -7,6 +7,7 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float screenWidthInUnit = 16f;
     [SerializeField] float minX = 1f;
     [SerializeField] float maxX = 15f;
+    [SerializeField] bool isDebugMode = false;
 
     private Ball ball;
 
@@ -24,9 +25,13 @@ public class Paddle : MonoBehaviour {
 
     private float GetXPosition() {
 
-        //float xPos = Input.mousePosition.x / Screen.width * screenWidthInUnit;
-        float xPos = ball.transform.position.x;
-
+        float xPos = 0;
+        if (isDebugMode) {
+            xPos = ball.transform.position.x;
+        } else {
+            xPos = Input.mousePosition.x / Screen.width * screenWidthInUnit;
+        }
+        
         return Mathf.Clamp(xPos, minX, maxX);
     }
 }

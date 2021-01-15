@@ -16,7 +16,7 @@ public class Level : MonoBehaviour {
         breakableBlocks++;
     }
 
-    public void ReduceBlockCounts() {
+    public void BlockDestroyed() {
         breakableBlocks--;
 
         if (breakableBlocks <= 0) {

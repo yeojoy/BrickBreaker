@@ -9,7 +9,21 @@ public class GameStatus : MonoBehaviour {
     [SerializeField] int pointsPerBlockDestoryed = 10;
     [SerializeField] int currentScore = 0;
     [SerializeField] Text scoreText;
-    
+
+    private void Awake() {
+
+        int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
+
+        // Below codes are only for singleton pattern to keep user's score.
+        if (gameStatusCount > 1) {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        } else {
+            DontDestroyOnLoad(gameObject);
+        }
+        
+    }
+
     // Update is called once per frame
     void Update() {
         // 1f is regular time.
@@ -18,6 +32,11 @@ public class GameStatus : MonoBehaviour {
 
     public void AddToScore() {
         currentScore += pointsPerBlockDestoryed;
+        scoreText.text = currentScore.ToString();
+    }
+
+    public void ResetScores() {
+        currentScore = 0;
         scoreText.text = currentScore.ToString();
     }
 }

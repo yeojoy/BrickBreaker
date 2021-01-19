@@ -12,6 +12,8 @@ public class SceneLoadManager : MonoBehaviour {
 
     public void MoveFirstScene() {
         SceneManager.LoadScene(0);
+        GameStatus gameStatus = FindObjectOfType<GameStatus>();
+        gameStatus.ResetScores();
     }
 
     public void MoveGameOverScene() {

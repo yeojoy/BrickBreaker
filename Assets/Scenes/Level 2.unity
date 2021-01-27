@@ -9558,30 +9558,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1521310718}
     m_Modifications:
-    - target: {fileID: -2626899961809210050, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
-        type: 3}
-      propertyPath: level
-      value: 
-      objectReference: {fileID: 1988041087}
-    - target: {fileID: 726702749769541022, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.9568628
-      objectReference: {fileID: 0}
-    - target: {fileID: 726702749769541022, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.9333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 726702749769541022, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.86274517
-      objectReference: {fileID: 0}
     - target: {fileID: 726702749769541023, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
         type: 3}
       propertyPath: m_Name
-      value: Block
+      value: Breakable Block
       objectReference: {fileID: 0}
     - target: {fileID: 726702749769541089, guid: 1ecf57aa834fb4c6b8d112bb7acaaae6,
         type: 3}
@@ -16408,6 +16388,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6067191959689225603, guid: acd7603d349bf430293629a5b91bbbf0,
+        type: 3}
+      propertyPath: isDebugMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6067191959689225605, guid: acd7603d349bf430293629a5b91bbbf0,
         type: 3}
       propertyPath: m_RootOrder
@@ -16416,7 +16401,7 @@ PrefabInstance:
     - target: {fileID: 6067191959689225605, guid: acd7603d349bf430293629a5b91bbbf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.98
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6067191959689225605, guid: acd7603d349bf430293629a5b91bbbf0,
         type: 3}
@@ -16569,7 +16554,7 @@ PrefabInstance:
     - target: {fileID: 8405902019095854470, guid: c6d616b94549544219acbd655bfa4baf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.994
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8405902019095854470, guid: c6d616b94549544219acbd655bfa4baf,
         type: 3}

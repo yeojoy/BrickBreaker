@@ -12,7 +12,7 @@ public class SceneLoadManager : MonoBehaviour {
 
     public void MoveFirstScene() {
         SceneManager.LoadScene(0);
-        GameStatus gameStatus = FindObjectOfType<GameStatus>();
+        GameSession gameStatus = FindObjectOfType<GameSession>();
         gameStatus.ResetScores();
     }
 

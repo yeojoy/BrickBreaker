@@ -17395,21 +17395,9 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 1631943051}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09f957d0675884cceb5ed2241600e361, type: 3}
---- !u!114 &1631943051 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5113904495886379002, guid: 09f957d0675884cceb5ed2241600e361,
-    type: 3}
-  m_PrefabInstance: {fileID: 1631943050}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1653119847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22606,7 +22594,7 @@ PrefabInstance:
     - target: {fileID: 6067191959689225605, guid: acd7603d349bf430293629a5b91bbbf0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.98
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6067191959689225605, guid: acd7603d349bf430293629a5b91bbbf0,
         type: 3}
@@ -22759,7 +22747,7 @@ PrefabInstance:
     - target: {fileID: 8405902019095854470, guid: c6d616b94549544219acbd655bfa4baf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.994
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8405902019095854470, guid: c6d616b94549544219acbd655bfa4baf,
         type: 3}
